@@ -1,0 +1,61 @@
+.about{
+    display:flex;
+    flex-direction: column;
+    margin: 81px;
+    padding: 75px;
+}
+.About-header{
+    margin-bottom: 32px;
+}
+.About-left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.container-About-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+/* change layout changing from grid to flex */
+
+@media(max-width:758px){
+    .container-About-center{
+        display: flex;
+        flex-direction:column-reverse;
+        align-content: center;
+        justify-content: center;
+    }
+    /* align text in the center */
+    #About-why{
+        margin: 35px ;
+        text-align: center;
+    }
+
+}
+
+#About-why{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-right: 35px ;
+    
+}
+#living-room-img{
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: auto;
+    
+}
+.button-container{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    padding: 17px;
+
+
+}

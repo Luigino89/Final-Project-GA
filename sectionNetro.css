@@ -1,0 +1,161 @@
+.netro {
+    margin:81px;
+    padding: 75px;
+    display:grid;
+    grid-template-columns:  50% 50%;
+    grid-template-rows:0.6fr 1fr 0.1fr ;
+}
+.header-netro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%
+}
+.container-img-netro{  
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    overflow: hidden;
+}
+
+.container-img-netro img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-p-netro{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin:30px
+}
+#button-netro {
+    grid-row:  3/4 ;
+    grid-column: 1/3;
+}
+@media(max-width:768px){
+
+    .netro {
+        margin:75px 48px;
+        
+       
+    }
+    
+}
+
+/* container two images besides used to  separate */
+
+.images-toghether-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#house-ferdy {
+    max-width: 50%;
+    margin-left: 10px;
+    
+
+    
+}
+#menu-agri{
+    max-width:50% ;
+    margin:10px 0 10px 10px;
+}
+
+/* section extra activities */
+
+
+.activities {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    
+    padding: 75px;
+    justify-content: center;
+    
+}
+@media (max-width:768px){
+    .activities {
+        display:flex;
+        flex-direction: column;
+        padding: 75px;
+        justify-content: center;
+    }
+    .activities-images{
+        width: auto;
+    }
+   
+}
+.activities-header {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    
+}
+.activities-intro-clip  {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+
+}
+.activities p {
+    padding:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.activities-images {
+    width: 100%;
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: #262626;
+    display:flex;
+    flex-direction: column;
+    padding: 32px 75px;
+}
+.businnes-info {
+    color:white;
+    display: flex;
+    justify-content: center;
+
+}
+.businnes-info-address {
+    color: rgb(128,128,128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+.businnes-info-address li {
+    margin:10px 10px 0 0;
+
+}
+footer h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.footer-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

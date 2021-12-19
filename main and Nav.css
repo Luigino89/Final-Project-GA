@@ -1,0 +1,161 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    background: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    letter-spacing: .01em;
+    line-height: 1.4em;
+    text-transform: none;
+    color: rgba(40,26,23,.6)
+}
+
+/* ------HEADER------- */
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin:10px;
+    width: 100%;
+    
+}
+header h2{
+    font-size: 50px;
+
+}
+@media(max-width:640px){
+    header h2{
+        font-size: 35px;
+    
+    }
+    
+
+};
+.nav-logo h2{
+
+    display:block;
+    font-family: 'Italianno', cursive;
+    font-size: 7vh;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+header h5{
+    overflow: auto;
+}
+#view {
+    width: 100%;
+
+}
+nav{
+    position : absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    top:20px;
+    background: rgba(28, 32, 27, 0.2)
+    
+}
+
+.nav-logo{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+@media(max-width:375px){}
+.nav-logo h2 , .nav-logo h5 {
+    
+
+}
+
+ 
+.nav-links {
+    display: flex; 
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links li  :hover{
+    color: black;
+}
+/*inside header slogan*/
+.under-navbar{
+    color:white;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top:50%;
+    left:4rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+}
+.under-navbar h3 ,.under-navbar h2  {
+    color:white;
+}
+
+
+ 
+ /* PHONE  FRIENDLY HEADER  AND HAMBURGER DROP DOWN MENU*/
+@media (max-width: 768px) {
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .hamburger {
+        position:absolute;
+        cursor: pointer;
+        right: 5% ;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 11;
+    }
+   
+    .nav-links { 
+        top:0;
+        visibility: hidden;
+        position: fixed;
+        background: rgb(28,92,28);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 110% -10%);
+        -webkit-clip-path :circle(100px at 110% -10%);
+        transition: all 1s ease-out;
+    }
+        /* add open class for toggle */
+    .nav-links.open {
+        visibility: visible;
+        z-index: 10;
+        clip-path: circle(1000px at 90% 0%);
+        -webkit-clip-path :circle(1000px at 90% 0%);
+        
+    }
+    
+    
+}
