@@ -66,14 +66,18 @@ nav{
     
 }
 
-.nav-logo {
+.nav-logo{
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 2rem;
 }
+@media(max-width:375px){}
+.nav-logo h2 , .nav-logo h5 {
+    
 
+}
 
  
 .nav-links {
@@ -92,11 +96,11 @@ nav{
     text-decoration: none;
     font-size: 16px;
 }
-
 .nav-links li  :hover{
     color: black;
 }
 /*inside header slogan*/
+
 .under-navbar{
     color:white;
     position: absolute;
@@ -244,11 +248,10 @@ button a {
     height: 680px;
     object-fit:cover;
     object-position: 50% 30%; 
-
 }
 
 
-/* section about la villa */
+/* about la villa section */
 
 
 .about{
@@ -273,17 +276,30 @@ button a {
     justify-content: center;
 }
 
+/* change layout changing from grid to flex */
 
+@media(max-width:758px){
+    .container-About-center{
+        display: flex;
+        flex-direction:column-reverse;
+        align-content: center;
+        justify-content: center;
+    }
+    /* align text in the center */
+    #About-why{
+        margin: 35px ;
+        text-align: center;
+    }
 
+}
 
-
-.About-why {
+#About-why{
     grid-column-start: 1;
     grid-column-end: 2;
     margin-right: 35px ;
     
 }
-#living-room-img {
+#living-room-img{
     display: block;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -300,24 +316,53 @@ button a {
 
 }
 
-@media(max-width:758px){
-    .container-About-center{
-        display: flex;
-        flex-direction:column-reverse;
-        align-content: center;
-        justify-content: center;
-    }
-    /* align text in the center */
-    .About-why {
-        margin: 35px ;
-        text-align: center;
-    }
 
+/* section netro e biella */
+
+
+.netro {
+    margin:81px;
+    padding: 75px;
+    display:grid;
+    grid-template-columns:  50% 50%;
+    grid-template-rows:0.6fr 1fr 0.1fr ;
+}
+.header-netro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%
+}
+.container-img-netro{  
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    overflow: hidden;
 }
 
-/* Netro e biella */
+.container-img-netro img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-p-netro{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin:30px
+}
+#button-netro {
+    grid-row:  3/4 ;
+    grid-column: 1/3;
+}
+@media(max-width:768px){
 
-
+    .netro {
+        margin:75px 48px;
+        
+       
+    }
+    
+}
 
 /* container two images besides used to  separate */
 
@@ -325,14 +370,6 @@ button a {
     display:flex;
     justify-content: center;
     align-items: center;
-}
-@media(max-width:767px){
-    #house-ferdy {
-        display:none;
-        max-width: 50%;
-        margin-left: 10px;
-    }
-
 }
 
 
@@ -354,7 +391,7 @@ button a {
 .activities {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25% 1fr;
+    grid-template-rows: 0.5fr 1fr;
     
     padding: 75px;
     justify-content: center;
@@ -370,15 +407,6 @@ button a {
     .activities-images{
         width: auto;
     }
-    .activities-header {
-        display: flex;
-        flex-direction: column;
-
-        margin: 10px;
-        
-        
-    }
-        
    
 }
 .activities-header {
@@ -414,8 +442,6 @@ button a {
 footer {
     background-color: #262626;
     display:flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 32px 75px;
 }
@@ -432,11 +458,6 @@ footer {
     justify-content: center;
     list-style: none;
     padding: 20px;
-}
-@media(max-width:815px){
-    .businnes-info-address {
-        flex-direction: column;
-    }
 }
 .businnes-info-address li {
     margin:10px 10px 0 0;
@@ -460,4 +481,5 @@ footer button {
     align-items: center;
     justify-content: center;
 }
+
 

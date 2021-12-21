@@ -1,6 +1,3 @@
-
-
-//Hamburger Menu 
 // declare variables (get element from DOM)
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -48,7 +45,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
 //automatic slide
 var slideIndex = 0;
 showSlides();
