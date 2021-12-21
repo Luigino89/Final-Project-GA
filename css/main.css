@@ -73,11 +73,11 @@ nav{
     justify-content: center;
     margin: 2rem;
 }
-@media(max-width:375px){}
+/* @media(max-width:375px){}
 .nav-logo h2 , .nav-logo h5 {
     
 
-}
+} */
 
  
 .nav-links {
